@@ -36,7 +36,7 @@ async def on_ready():
         status=discord.Status.online,
         activity=discord.Activity(
             type=discord.ActivityType.watching,
-            name="thành viên mới vào server 👀"
+            name="xem sex 👀"
         )
     )
     channel = bot.get_channel(WELCOME_CHANNEL_ID)
