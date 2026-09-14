@@ -8,6 +8,7 @@ from threading import Thread
 # Token đọc từ Environment Variable trên Render (KHÔNG viết token vào đây!)
 TOKEN = os.environ.get("TOKEN")
 WELCOME_CHANNEL_ID = 1548691233143128064
+CHANNEL_RULE_ID = 1548730728479719494
 WELCOME_IMAGE_URL = "https://i.pinimg.com/originals/a7/11/6f/a7116f6d34c68356e727635462c35db9.gif"
 # ===============================================
 
@@ -43,7 +44,7 @@ async def on_ready():
     if channel:
         embed = discord.Embed(
             title="🤖 Bot Online!",
-            description=f"**{bot.user.name}** đã hoạt động và sẵn sàng phục vụ!",
+            description=f"**{bot.user.name}** San sang!",
             color=discord.Color(0xFFFFFF)
         )
         embed.set_thumbnail(url=bot.user.display_avatar.url)
@@ -62,7 +63,7 @@ async def on_member_join(member):
         description=(
             f"Chào **{member.mention}** đã đến với "
             f"**{member.guild.name}**! 🥳\n\n"
-            f"📖 Đọc luật ở kênh <#{WELCOME_CHANNEL_ID}>\n"
+            f"📖 Đọc luật ở kênh <#{CHANNEL_RULE_ID }>\n"
             f"💬 Chat cùng mọi người nhé!"
         ),
         color=discord.Color(0xFFFFFF)
