@@ -8,7 +8,7 @@ from threading import Thread
 # Token đọc từ Environment Variable trên Render (KHÔNG viết token vào đây!)
 TOKEN = os.environ.get("TOKEN")
 WELCOME_CHANNEL_ID = 1548691233143128064
-WELCOME_IMAGE_URL = "https://vipestudio.com/wp-content/uploads/2020/06/unnamed-file.wp.gif"
+WELCOME_IMAGE_URL = "https://i.pinimg.com/originals/a7/11/6f/a7116f6d34c68356e727635462c35db9.gif"
 # ===============================================
 
 # --- Server web giữ cho Render không tắt bot ---
